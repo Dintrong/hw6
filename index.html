@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+            background-color: #c7c419;
+            
+
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作業6</title>
+</head>
+  <body>
+    <button onclick="changeColor()">更改邊框顏色</button>
+<div id="box"></div>
+<script>
+   function changeColor() {
+  // 產生隨機的RGB顏色
+  const randomColor = `rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`;
+  
+  // 取得要更改邊框顏色的元素
+  const box = document.getElementById("box");
+  
+  // 更改元素邊框顏色
+  box.style.borderColor = randomColor;
+}
+</script>
+
+  </body>
+
+</html>
